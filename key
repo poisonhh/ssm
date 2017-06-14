@@ -1,0 +1,23 @@
+linux 命令笔记
+tomcat配置的时候要先在startup.sh 文件中添加jdk的环境变量还要在末尾添加tomcat的环境变量
+export TOMCAT_HOME=/opt/apache-tomcat-7.0.75//后面是tomcat的版本
+然后要在catalina.sh 和setclasspath.sh 文件在添加一下变量
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_73
+export JRE_HOME=${JAVA_HOME}/jre 
+
+
+
+
+jdk环境 在.bashrc文件中
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_73
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=${JAVA_HOME}/bin:$PATH
+
+进入root su 
+安装vim编辑器 sudo apt-get install vim-gtk
+删除文件或者文件夹
+rm 文件名
+rm -r 文件夹名
+
+tar -zxvf
